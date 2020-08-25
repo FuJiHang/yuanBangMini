@@ -1,0 +1,1 @@
+.fuTabbar{position:fixed;bottom:0;left:0;width:100%;background:#fff;display:flex;border-top:1px solid #f1f1f1;height:96rpx;align-items:center;font-size:20rpx;z-index:99}.fuTabbar .child{flex:1;text-align:center}.fuTabbar .child image{width:36rpx;height:1rpx}.fuTabbar .child .name{color:#A0A0A0}.fuTabbar .child .active{color:#559EFF}

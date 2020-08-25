@@ -1,0 +1,34 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-18 17:27:13
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-18 17:27:27
+ * @Description: 租赁成功
+ */  -->
+
+<view id="fuLeaseOk">
+    
+
+    <!--  -->
+    <image src="" mode="widthFix" />
+    <view class="name">
+        
+    </view>
+    <view class="time">
+        
+    </view>
+    <view class="contant">
+        <view class="list">
+            <image src="" mode="widthFix" />            
+            租赁成功
+        </view>
+        <view class="list">
+            <image src="" mode="widthFix" />            
+            T+1日生效
+        </view>
+    </view>
+    <!--  -->
+    <view class="payNow">
+        <van-button>确  定</van-button>
+    </view>
+</view>

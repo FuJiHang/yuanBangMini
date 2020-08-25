@@ -1,0 +1,113 @@
+/* packageA/fujihang/fuTest/fuTest.wxss */
+page {
+    background: black;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.wux-date-picker__toolbar {
+    position: absolute !important;
+}
+
+.wux-picker-col__indicator::after,
+::before {
+    border: none !important;
+
+}
+
+.wux-picker-col__indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1 !important;
+}
+
+.wux-picker-col__indicator .bgFU {
+    background: rgba(245, 245, 245, 1);
+    height: 110rpx;
+    width: 170rpx;
+
+    border-radius: 10rpx;
+}
+
+.wux-picker-col__item--selected {
+
+    border-radius: 10rpx;
+    margin: 0 50rpx;
+    color: #559EFF !important;
+    font-size: 54rpx !important;
+    font-weight: 500 !important;
+    z-index: 999;
+    position: relative;
+}
+
+.wux-date-picker__title {
+    display: none !important;
+}
+
+.wux-popup-index--wux-popup,
+.wux-backdrop {
+    position: relative !important;
+}
+
+.wux-backdrop,
+.wux-backdrop--transparent {
+    position: relative !important;
+}
+
+.fuTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 280rpx;
+    overflow: hidden;
+    position: relative;
+    padding: 0 30rpx;
+   
+}
+
+.line {
+    position: absolute;
+    width: 32rpx;
+    height: 8rpx;
+    background: rgba(202, 202, 202, 1);
+  
+    top: 50%;
+    z-index: 9999;
+}
+.one{
+    left: 32.5%;
+}
+.two{
+    right: 32.5%;
+}
+.okbtn {
+    border-top: 10rpx solid rgba(238, 238, 238, 1);
+    position: relative;
+    z-index: 999;
+    
+}
+.fuTimeAlert{
+    background: #fff;
+    border-radius:40rpx 40rpx 0px 0px;
+    overflow: hidden;
+    flex: 1;
+}
+.okbtn .van-button {
+    width: 100%;
+    color: #202020;
+    font-size: 36rpx;
+    font-weight: 500;
+    border: none !important;
+    height: 100rpx;
+}
+.wux-date-picker__button--confirm{
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    height: 100rpx;
+    width: 100%;
+    opacity: 0;
+    z-index: 8;
+}

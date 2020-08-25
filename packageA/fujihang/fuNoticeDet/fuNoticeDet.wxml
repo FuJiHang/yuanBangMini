@@ -1,0 +1,15 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-22 16:36:59
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-22 16:37:23
+ * @Description: 通知详情
+ */  -->
+
+
+<view id="fuNoticeDet">
+    <rich-text class="" nodes="{{}}">
+        
+    </rich-text>
+      
+</view>

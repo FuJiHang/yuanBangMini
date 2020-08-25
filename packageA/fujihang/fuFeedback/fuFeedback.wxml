@@ -1,0 +1,34 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-19 10:58:38
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-19 11:05:07
+ * @Description: 反馈
+ */ -->
+<view id="fuFeedback">
+    <!-- x选择 -->
+    <view class="chooseList">
+        <span class="child {{index==0?'active':''}}" wx:for="{{chooseList}}" wx:key="index">
+            <radio class="radio" value="r1" color="#559EFF" checked="true" />
+            {{item.name}}
+        </span>
+    </view>
+    <!--  -->
+    <view class="quest">
+        <textarea bindinput="inputFN" data-name="detail" placeholder="维修详情描述…"></textarea>
+        <view class="num border">{{detail.length}}/50</view>
+        <view class="imgList">
+            <span class="add">+</span>
+        </view>
+        <view class="num">0/10</view>
+    </view>
+    <!--  -->
+    <view class="payNow">
+        <van-button>确认提交</van-button>
+    </view>
+    <!--  -->
+    <view class="myFeed">
+        我的反馈
+        <image class="arrow" src="/image/arrow.png" mode="widthFix" />
+    </view>
+</view>

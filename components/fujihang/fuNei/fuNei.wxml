@@ -1,0 +1,33 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-23 15:02:13
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-23 15:02:43
+ * @Description: 街坊谈组件
+ */ -->
+<view class="fuNei">
+    <image class="peo" src="/image/login.jpg" mode="aspectFill" />
+    <span class="contant">
+        <view class="name_time">
+            <span class="name">
+                我
+                <span class="arrow"></span>
+            </span>
+            <span class="type">街坊谈</span>
+            <span class="val">发布</span>
+            <span class="time">2020-4-20  20:20</span>
+        </view>
+        <view class="detail">
+            <view class="name">元邦小区防疫科普,终结疫情从你我做起</view>
+            <view class="img_contant">
+                <image src="/image/house_i.png" mode="widthFix" />
+            </view>
+        </view>
+        <view class="funtion">
+            <span class="child" wx:for='{{funList}}' wx:key='index'>
+                <image src="{{item.ischoose?item.img2:item.img}}" mode="aspectFit" />
+                {{item.val}}
+            </span>
+        </view>
+    </span>
+</view>

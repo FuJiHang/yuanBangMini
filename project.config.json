@@ -1,0 +1,312 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.1",
+	"appid": "wx608fcbc4fb08f2b5",
+	"projectname": "%E5%85%83%E9%82%A6%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "缴费",
+					"pathName": "packageA/fujihang/fuPay/fuPay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的发票",
+					"pathName": "packageA/fujihang/fuMyInvoice/fuMyInvoice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发票明细",
+					"pathName": "packageA/fujihang/fuInvoiceDet/fuInvoiceDet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "停车位",
+					"pathName": "packageA/fujihang/fuParkSpace/fuParkSpace",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "packageA/fujihang/fuTest/fuTest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "维修",
+					"pathName": "packageA/fujihang/fuRepair/fuRepair",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门岗放行",
+					"pathName": "packageA/fujihang/fuRelease/fuRelease",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "资讯",
+					"pathName": "packageA/fujihang/fuAllRealInfo/fuAllRealInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/fujihang/fuMy/fuMy",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "切换房产",
+					"pathName": "packageA/fujihang/fuSwitchPro/fuSwitchPro",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "社区服务",
+					"pathName": "pages/fujihang/fuServe/fuServe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "预约车位",
+					"pathName": "packageA/fujihang/fuReservePack/fuReservePack",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "车位租用",
+					"pathName": "packageA/fujihang/fuParkRental/fuParkRental",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "车位租用合同",
+					"pathName": "packageA/fujihang/fuParkContract/fuParkContract",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "租赁成功",
+					"pathName": "packageA/fujihang/fuLeaseOk/fuLeaseOk",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选择小区",
+					"pathName": "packageA/fujihang/fuMinArea/fuMinArea",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增房产",
+					"pathName": "packageA/fujihang/fuAddHouse/fuAddHouse",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的报修",
+					"pathName": "packageA/fujihang/fuMyRepair/fuMyRepair",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "反馈",
+					"pathName": "packageA/fujihang/fuFeedback/fuFeedback",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的发布",
+					"pathName": "packageA/fujihang/fuMyRelease/fuMyRelease",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "参与的活动",
+					"pathName": "packageA/fujihang/fuAddAction/fuAddAction",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "放行记录",
+					"pathName": "packageA/fujihang/fuReleaseRecord/fuReleaseRecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人信息",
+					"pathName": "packageA/fujihang/fuPersonInfor/fuPersonInfor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的消息",
+					"pathName": "packageA/fujihang/fuMyNew/fuMyNew",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收到的赞",
+					"pathName": "packageA/fujihang/fuGetFab/fuGetFab",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收到的评论",
+					"pathName": "packageA/fujihang/fuGetCom/fuGetCom",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 26,
+					"name": "邀请我的家庭成员",
+					"pathName": "packageA/fujihang/fuInvitFam/fuInvitFam",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "服务页面",
+					"pathName": "pages/fujihang/fuServe/fuServe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "物业通知",
+					"pathName": "packageA/fujihang/fuProperNotice/fuProperNotice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "社区电话",
+					"pathName": "packageA/fujihang/fuComPhone/fuComPhone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "闲置转买",
+					"pathName": "packageA/fujihang/fuIdleBuy/fuIdleBuy",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 31,
+					"name": "停车位搜索",
+					"pathName": "packageA/fujihang/fuPackSeach/fuPackSeach",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登陆",
+					"pathName": "packageA/fujihang/fuLogin/fuLogin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "街坊谈",
+					"pathName": "packageA/fujihang/fuNeiTalk/fuNeiTalk",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "街坊谈详情",
+					"pathName": "packageA/fujihang/fuNeiDet/fuNeiDet",
+					"scene": null
+				}
+			]
+		}
+	}
+}

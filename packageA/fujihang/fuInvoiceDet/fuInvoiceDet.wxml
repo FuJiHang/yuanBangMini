@@ -1,0 +1,13 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-15 09:25:41
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-15 09:27:17
+ * @Description: 发票明细
+ */ -->
+<view id="fuInvoiceDet">
+    <view class="postList" wx:for="{{dataList}}" wx:key="index">
+        <span class="name">{{item.name}}</span>
+        <span class="val">{{item.val}}</span>
+    </view>
+</view>

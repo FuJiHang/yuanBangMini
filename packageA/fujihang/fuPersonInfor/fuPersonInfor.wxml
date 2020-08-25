@@ -1,0 +1,19 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-19 17:39:45
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-19 17:40:24
+ * @Description: 个人信息
+ */ -->
+<view id="fuPersonInfor">
+    <!--  -->
+    <view class="list" wx:for="{{info}}" wx:key="index">
+        <span class="name">{{item.name}}</span>
+        <span class="val">
+            {{index&&index!=2?item.val:''}}
+            <image wx:if="{{!index}}" src="" mode="aspectFill" />
+            <input wx:if="{{index==2}}" type="text" value="{{item.val}}" />
+        </span>
+    </view>
+
+</view>

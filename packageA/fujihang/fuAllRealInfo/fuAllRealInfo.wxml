@@ -1,0 +1,26 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-16 16:27:53
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-16 16:34:37
+ * @Description: 资讯
+ */ -->
+<view id="fuAllRealInfo">
+    <!-- 搜索 -->
+    <view class="seach">
+        <input focus="{{focus}}" />
+        <view class="tip">
+            <image src="" mode="widthFix" />
+            搜索关键词查找 
+        </view>
+    </view>
+    <!--  -->
+    <van-tabs active="{{ newActive }}" line-height="4" line-width="30" swipeable="true" color="#559EFF" bind:change="newChange">
+        <van-tab wx:for="{{newList}}" wx:key="index" title="{{item.name}}">
+            <view class="contantNew">
+                <fuRealInfo />
+                <fuRealInfo />
+            </view>
+        </van-tab>
+    </van-tabs>
+</view>

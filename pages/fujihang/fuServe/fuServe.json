@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "fuTabbar":"../../../components/fujihang/fuTabbar/fuTabbar"
+  }
+}

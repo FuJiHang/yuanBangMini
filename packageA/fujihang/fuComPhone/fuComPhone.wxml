@@ -1,0 +1,45 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-22 16:39:00
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-22 16:39:22
+ * @Description: 社区电话 派出所 社区街道办
+ */ -->
+<view id="fuComPhone">
+    <!--  -->
+    <view class="navTop">
+        <image src="/image/home_p.png" mode="widthFix" />
+        <span class="name">元邦山清水秀花园1栋205</span>
+    </view>
+    <!-- 社区电话 -->
+    <view class="detail" wx:for='{{dataList}}' wx:key='index'>
+        <view class="name">{{item.name}}</view>
+        <view class="phone">
+            <image src="/image/phone_c.png" mode="widthFix" />
+            <span class="num">{{item.phone}}</span>
+        </view>
+        <view class="time" hidden="{{!item.val}}">
+            <view class="blob">上班时间:</view>
+            <view class="val">{{item.val}}</view>
+            <view class="val">{{item.val2}}</view>
+        </view>
+    </view>
+    <!-- 派出所 -->
+    <view class="pcs" wx:for='{{pcs}}' wx:key='index'>
+        <view class="name">{{item.name}}</view>
+        <view class="list" wx:for='{{item.data}}' wx:for-item="itemc" wx:for-index="indexc" wx:key='indexc'>
+            <image src="{{itemc.val}}" mode="widthFix" />
+            <span class="num">
+            {{itemc.val3 }}
+                <view style="margin-left:15rpx;">
+                     {{itemc.name}}
+                    <view>{{itemc.val2}}</view>
+                </view>
+            </span>
+        </view>
+        <view class="phone" wx:if="{{item.phone}}">
+            <image src="/image/phone_c.png" mode="widthFix" />
+            <span class="num">{{item.phone}}</span>
+        </view>
+    </view>
+</view>

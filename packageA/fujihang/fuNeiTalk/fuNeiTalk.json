@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "fuNei":"/components/fujihang/fuNei/fuNei"
+  },
+  "navigationBarTitleText":"街坊谈"
+}

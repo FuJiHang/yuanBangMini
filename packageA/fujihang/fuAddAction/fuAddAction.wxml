@@ -1,0 +1,21 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-19 14:38:46
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-19 14:39:09
+ * @Description: 参与的活动
+ */ -->
+<view id="fuAddAction">
+    <!--  -->
+    <view class="list">
+        <view class="bw">
+            <view class="nav">
+                <span class="name">元邦家园抗击疫情宣传公益活动</span>
+                <span class="val ok">进行中</span>
+            </view>
+            <view class="det">活动地点: 元邦山青水秀花园大门口</view>
+            <view class="det">活动时间: 2020.6.22 - 2020.6.30</view>
+            <image src="/image/banner.jpg" mode="widthFix" />
+        </view>
+    </view>
+</view>

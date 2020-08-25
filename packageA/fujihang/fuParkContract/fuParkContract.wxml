@@ -1,0 +1,15 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-18 17:20:43
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-18 17:21:54
+ * @Description: 车位租用合同
+ */ -->
+<view id="fuParkContract">
+
+   <rich-text nodes="{{nodes}}"></rich-text>
+    <!--  -->
+    <view class="payNow">
+        <van-button>我已确认并支付</van-button>
+    </view>
+</view>

@@ -1,0 +1,20 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-12 15:53:34
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-12 15:54:00
+ * @Description: 自定义导航条
+ */  -->
+
+<view class="fuTabbar">
+    
+    <span bindtap="toFN" data-url="{{item.to}}" class="child " wx:for="{{tabList}}" wx:key="index">
+        <image mode="widthFix" src="{{active==index?item.urlA:item.url}}" />
+        <view class="name {{active==index?'active':''}}">
+            {{item.name}}
+        </view>
+    </span>
+
+
+</view>
+  

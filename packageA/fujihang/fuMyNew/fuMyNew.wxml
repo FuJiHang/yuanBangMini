@@ -1,0 +1,91 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-19 18:57:29
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-22 10:16:58
+ * @Description: 我的消息
+ */ -->
+<view id="fuMyNew">
+    <!-- 头部 -->
+    <view class="people">
+        <image src="/image/house_i.png" mode="aspectFill" />
+        <span class="contant">
+            <span class="name">张强</span>
+            <span class="type">物业经理</span>
+        </span>
+    </view>
+    <!--  -->
+    <view class="funtian">
+        <span class="child" wx:for="{{funtianList}}" wx:key="index">
+            <view class="val">{{item.val}}</view>
+            <view class="name">{{item.name}}</view>
+        </span>
+    </view>
+    <!--  -->
+    <!--  -->
+    <van-tabs active="{{ newActive }}" line-height="4" line-width="30" swipeable="true" color="#559EFF" bind:change="newChange">
+        <van-tab wx:for="{{newList}}" wx:key="index" title="{{item.name}}">
+            <!-- 我的动态 -->
+            <view hidden="{{index}}">
+                <view class="dynamic">
+                    <image class="peoss" src="/image/house_i.png" mode="aspectFill" />
+                    <span class="contant">
+                        <view class="name_time">
+                            <span class="name">我</span>
+                            <span class="type">
+                                街坊谈
+                                <span class="arrow"></span>
+                            </span>
+                            <span class="val">发布</span>
+                            <span class="time">2020-4-20  20:20</span>
+                        </view>
+                        <view class="detail">
+                            <view class="name">元邦小区防疫科普,终结疫情从你我做起</view>
+                            <view class="img_contant">
+                                <image src="/image/house_i.png" mode="widthFix" />
+                            </view>
+                        </view>
+                    </span>
+                </view>
+            </view>
+            <!--  -->
+            <view hidden="{{!index}}">
+                <view class="fuRealInfo">
+                    <view class="name_time">
+                        <image class="peoss" src="/image/house_i.png" mode="aspectFill" />
+                        <span class="name">我</span>
+                        <span class="type">
+                            街坊谈
+                        </span>
+                        <span class="val">发布</span>
+                        <span class="time">2020-4-20  20:20</span>
+                    </view>
+                    <view class="callback">
+                        很优秀很优秀
+                    </view>
+                    <view class="detail">
+                        <span class="contant">
+                            <view class="name">
+                                <image src="/image/hot_i.png" mode="widthFix" />
+                                元邦小区防疫科普,终结疫情从你我做起终结疫情从你我做起终结疫情从你我做起
+                                <image class="n_i" src="/image/new_i.png" mode="widthFix" />
+                            </view>
+                            <view class="see_time">
+                                <span class="time">2020-6-22</span>
+                                <span class="see">
+                                    <image src="/image/good_i.png" mode="widthFix" />
+                                    180
+                                </span>
+                                <span class="see">
+                                    <image src="/image/comm_i.png" mode="widthFix" />
+                                    180
+                                </span>
+                            </view>
+                        </span>
+                        <image class="img" src="/image/healthy_i.png" mode="aspectFill" />
+                    </view>
+                </view>
+            </view>
+        </van-tab>
+    </van-tabs>
+</view>

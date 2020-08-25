@@ -1,0 +1,94 @@
+{
+  "pages": [
+    "pages/fujihang/fuIndex/fuIndex",
+    "pages/fujihang/fuServe/fuServe",
+    "pages/fujihang/fuMy/fuMy"
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "fujihang/fuPay/fuPay",
+        "fujihang/fuMyInvoice/fuMyInvoice",
+        "fujihang/fuInvoiceDet/fuInvoiceDet",
+        "fujihang/fuParkSpace/fuParkSpace",
+        "fujihang/fuTest/fuTest",
+        "fujihang/fuRepair/fuRepair",
+        "fujihang/fuRelease/fuRelease",
+        "fujihang/fuAllRealInfo/fuAllRealInfo",
+        "fujihang/fuSwitchPro/fuSwitchPro",
+        "fujihang/fuReservePack/fuReservePack",
+        "fujihang/fuParkRental/fuParkRental",
+        "fujihang/fuParkContract/fuParkContract",
+        "fujihang/fuLeaseOk/fuLeaseOk",
+        "fujihang/fuMinArea/fuMinArea",
+        "fujihang/fuAddHouse/fuAddHouse",
+        "fujihang/fuMyRepair/fuMyRepair",
+        "fujihang/fuFeedback/fuFeedback",
+        "fujihang/fuMyRelease/fuMyRelease",
+        "fujihang/fuAddAction/fuAddAction",
+        "fujihang/fuReleaseRecord/fuReleaseRecord",
+        "fujihang/fuPersonInfor/fuPersonInfor",
+        "fujihang/fuMyNew/fuMyNew",
+        "fujihang/fuGetFab/fuGetFab",
+        "fujihang/fuGetCom/fuGetCom",
+        "fujihang/fuMyFamily/fuMyFamily",
+        "fujihang/fuInvitFam/fuInvitFam",
+        "fujihang/fuProperNotice/fuProperNotice",
+        "fujihang/fuNoticeDet/fuNoticeDet",
+        "fujihang/fuComPhone/fuComPhone",
+        "fujihang/fuIdleBuy/fuIdleBuy",
+        "fujihang/fuPackSeach/fuPackSeach",
+        "fujihang/fuLogin/fuLogin",
+        "fujihang/fuNeiTalk/fuNeiTalk",
+        "fujihang/fuNeiDet/fuNeiDet"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "wux-date-picker": "/wux/date-picker/index",
+    "wux-button": "/wux/button/index",
+    "van-button": "@vant/weapp/dist/button/index",
+    "van-popup": "@vant/weapp/dist/popup/index",
+    "van-notice-bar": "@vant/weapp/dist/notice-bar/index",
+    "van-tab": "@vant/weapp/dist/tab/index",
+    "van-tabs": "@vant/weapp/dist/tabs/index",
+    "van-radio": "@vant/weapp/dist/radio/index",
+    "van-radio-group": "@vant/weapp/dist/radio-group/index",
+    "van-action-sheet": "@vant/weapp/dist/action-sheet/index",
+    "van-datetime-picker": "@vant/weapp/dist/datetime-picker/index"
+  },
+  "tabBar": {
+    "backgroundColor": "#f9f9f9",
+    "borderStyle": "white",
+    "selectedColor": "#00b38b",
+    "color": "#666666",
+    "list": [
+      {
+        "pagePath": "pages/fujihang/fuIndex/fuIndex",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/fujihang/fuServe/fuServe",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index.png",
+        "text": "服务"
+      },
+      {
+        "pagePath": "pages/fujihang/fuMy/fuMy",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,244 @@
+#fuRepair {
+    padding-top: 26rpx;
+
+    // 
+    .quest {
+        margin: 0 48rpx 10rpx;
+        background: rgba(248, 248, 248, 1);
+        padding: 24rpx 40rpx 1rpx;
+
+        textarea {
+            width: 100%;
+            height: 200rpx;
+            overflow: auto;
+        }
+
+        .num {
+            text-align: right;
+            font-size: 30rpx;
+            color: rgba(164, 164, 164, 1);
+
+
+            margin-bottom: 10rpx;
+
+        }
+
+        .border {
+            margin-bottom: 30rpx;
+            padding: 20rpx 0;
+            border-bottom: 1px solid rgb(236, 236, 236);
+        }
+
+        .imgList {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .add {
+                width: 190rpx;
+                height: 190rpx;
+                background: rgba(221, 221, 221, 1);
+                margin-bottom: 33rpx;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 120rpx;
+            }
+        }
+    }
+
+    textarea {
+        font-size: 34rpx;
+    }
+
+    // 
+    .postList {
+        display: flex;
+        align-items: baseline;
+        margin: 0 48rpx;
+        padding: 25rpx 0;
+        border-bottom: 1px solid rgb(233, 233, 233);
+
+        .name {
+            font-size: 32rpx;
+            color: #686868;
+
+            font-weight: 500;
+            width: 28%;
+        }
+
+        .val {
+            flex: 1;
+
+            input {
+                color: #282828;
+                font-size: 32rpx;
+                width: 100%;
+            }
+
+            .time {
+                font-weight: 500;
+                font-size: 32rpx;
+                color: #559EFF;
+                background: rgba(244, 244, 244, 1);
+                border-radius: 3px;
+                padding: 12rpx 36rpx;
+              
+            }
+            .ml{
+                margin-left: 28rpx;
+            }
+
+
+        }
+    }
+
+    .payNow {
+        padding: 120rpx 52rpx 0;
+        box-sizing: border-box;
+
+        .van-button {
+            width: 100%;
+            height: 86rpx;
+            background: rgba(85, 158, 255, 1);
+            border-radius: 48rpx;
+            color: #fff;
+            font-size: 36rpx;
+            font-weight: 500;
+        }
+    }
+
+    // 时间
+    .van-popup--bottom {
+        background: none;
+    }
+
+    .fuTimeAlert {
+        background: #fff;
+        border-radius: 40rpx 40rpx 0px 0px;
+        overflow: hidden;
+        flex: 1;
+
+        .okbtn .van-button {
+            width: 100%;
+            color: #202020;
+            font-size: 36rpx;
+            font-weight: 500;
+            border: none !important;
+            height: 100rpx;
+        }
+
+        .wux-date-picker__button--confirm {
+            position: fixed !important;
+            bottom: 0;
+            left: 0;
+            height: 100rpx;
+            width: 100%;
+            opacity: 0;
+            z-index: 8;
+        }
+
+        .wux-date-picker__toolbar {
+            position: absolute !important;
+        }
+
+        .wux-picker-col__indicator::after,
+        ::before {
+            border: none !important;
+        }
+
+        .wux-picker-col__indicator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1 !important;
+        }
+
+        .wux-picker-col__indicator .bgFU {
+            background: rgba(245, 245, 245, 1);
+            height: 110rpx;
+            width: 170rpx;
+
+            border-radius: 10rpx;
+        }
+
+        .wux-picker-col__item--selected {
+            border-radius: 10rpx;
+            margin: 0 50rpx;
+            color: #559EFF !important;
+            font-size: 54rpx !important;
+            font-weight: 500 !important;
+            z-index: 999;
+            position: relative;
+        }
+
+        .wux-date-picker__title {
+            display: none !important;
+        }
+
+        .wux-popup-index--wux-popup,
+        .wux-backdrop {
+            position: relative !important;
+        }
+
+        .wux-backdrop,
+        .wux-backdrop--transparent {
+            position: relative !important;
+        }
+
+        .fuTime {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 280rpx;
+            overflow: hidden;
+            position: relative;
+            padding: 0 30rpx;
+        }
+
+        .line {
+            position: absolute;
+            width: 32rpx;
+            height: 8rpx;
+            background: rgba(202, 202, 202, 1);
+            top: 50%;
+            z-index: 9999;
+        }
+
+        .one {
+            left: 32.5%;
+        }
+
+        .two {
+            right: 32.5%;
+        }
+
+        .okbtn {
+            border-top: 10rpx solid rgba(238, 238, 238, 1);
+            position: relative;
+            z-index: 999;
+        }
+    }
+
+    .showTime {
+        .fuTime {
+            .dian {
+                top: 30%;
+                position: absolute;
+                left: 48.5%;
+                font-size: 72rpx;
+                z-index: 9999;
+                color: #CACACA;
+                font-weight: bold;
+            }
+        }
+
+        .wux-picker-col__indicator .bgFU {
+
+            width: 280rpx;
+        }
+
+    }
+}

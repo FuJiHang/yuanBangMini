@@ -1,0 +1,81 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-15 16:56:05
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-15 16:56:19
+ * @Description: 门岗放行
+ */ -->
+<view id="fuRelease">
+    <!--  -->
+    <view class="display people">
+        <span class="name">人数</span>
+        <span class="val">
+            <span class="num">2</span>
+            人
+        </span>
+    </view>
+    <view class="display time">
+        <span class="name">预约时间</span>
+        <span class="val">
+            <span class="day">2020 - 5 - 5</span>
+            <span class="min">12 : 30</span>
+        </span>
+    </view>
+    <view class="display object">
+        <span class="name">目的</span>
+        <span class="val">
+            <view class="contant">
+                <span class="child {{index==choose?'choose':''}}" wx:for="{{chooseList}}" wx:key="index" bindtap="chooseFN" data-index="{{index}}">
+                    {{item.name}}
+                </span>
+            </view>
+            <view class="other">
+                <input type="text" placeholder="其他事由" bindinput="inputFN" />
+            </view>
+        </span>
+    </view>
+    <view class="display brand">
+        <span class="name">车牌(选填)</span>
+        <span class="val">
+            <input type="text" placeholder="请填写车牌号" bindinput="inputFN" />
+        </span>
+    </view>
+    <!--  -->
+    <view class="tip">
+        验证码将在预约时间的30分钟之后失效,长按复
+        <view>制验证码发送给来访人员</view>
+    </view>
+    <!--  -->
+    <view class="payNow">
+        <van-button>提  交</van-button>
+    </view>
+    <!-- 验证码弹窗 -->
+    <van-popup show="{{ showCode }}">
+        <view class="Code">
+            <view class="bw">
+                <view class="navTop">门岗放行验证码</view>
+                <view class="num">
+                    <span class="val">1150</span>
+                </view>
+                <view class="detail">
+                    <image src="" mode="widthFix" />
+                    <span class="contant">
+                        <view class="address">元邦山清水秀花园1栋205  王鸿先生</view>
+                        <view class="child" wx:for="{{listDet}}" wx:key="index">
+                            <span class="name">{{item.name}}</span>
+                            <span class="val">{{item.val}}</span>
+                        </view>
+                    </span>
+                </view>
+                <view class="tipMin">
+                    长按复制验证码发送给来访人员,将其展示
+                    <view>给小区门岗查看</view>
+                </view>
+                <view class="btn" bindtap="closeFN" data-name="showTime">
+                    <van-button>确  定</van-button>
+                </view>
+            </view>
+        </view>
+    </van-popup>
+
+</view>

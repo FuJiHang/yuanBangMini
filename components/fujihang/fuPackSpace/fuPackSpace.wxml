@@ -1,0 +1,37 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-23 11:25:29
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-23 11:26:54
+ * @Description: 停车信息
+ */ -->
+<!--  -->
+<view class="fuPackSpace">
+    <view class="child">
+        <view class="detail">
+            <image src="/image/new_r.png" mode="aspectFill" />
+            <span class="contant">
+                <view class="name">
+                    <span class="flex">元邦明月翡翠1栋地下停车场A15</span>
+                    <span class="status">出售</span>
+                </view>
+                <view class="money">50000元/位</view>
+                <view class="type">
+                    <span class="sp">支持分期</span>
+                    <span class="sp">有产权</span>
+                    <span class="sp">近电梯</span>
+                </view>
+            </span>
+        </view>
+        <view class="people">
+            <image src="" mode="aspectFill" class="peo" />
+            <span class="name">
+                张芳
+                <span class="val">业主</span>
+            </span>
+            <image src="/image/new_r.png" mode="widthFix" class="img" />
+            <image src="/image/phone_r.png" mode="widthFix" class="img" />
+        </view>
+        <view class="time">2020-4-20 20:20 发布</view>
+    </view>
+</view>

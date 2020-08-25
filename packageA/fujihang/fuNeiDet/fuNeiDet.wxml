@@ -1,0 +1,79 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-23 16:23:13
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-23 16:23:25
+ * @Description: 街坊谈详情
+ */ -->
+<view id="fuNeiDet">
+    <!--  -->
+    <view class="name_time_nav">
+        <image src="/image/login.png" mode="scaleToFill" />
+        <span class="name">小乐乐</span>
+        <span class="type">来自</span>
+        <span class="val">元邦明月翡翠</span>
+    </view>
+    <!-- 轮播图 -->
+    <view class="swiper">
+        <swiper style="height:{{imgheights[current]-25}}rpx;" indicator-dots="{{true}}" indicator-color="#E4E4E4" indicator-active-color="#ffffff" autoplay="{{true}}" circular="{{false}}" vertical="{{false}}" interval="{{4000}}" duration="{{500}}" bindchange="bindchangeImg">
+            <swiper-item wx:for="{{banner}}" wx:key="index" data-id='{{index}}'>
+                <image data-id='{{index}}' bindload="imageLoad" class='item-img' src="{{item.url}}" mode='widthFix'></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!--  -->
+    <view class="title">元邦小区防疫科普,终结疫情从你我做起</view>
+    <!--  -->
+    <view class="navtop">
+        <span class="child {{ischoose==index?'blue':''}}" wx:for='{{navtop}}' wx:key='index' bindtap="chooseFN" data-name="{{index}}">
+            <image src="{{ischoose==index?item.img2:item.img}}" mode="aspectFit" />
+            {{item.val}}
+            <span class="border"></span>
+        </span>
+    </view>
+    <view class="detailCom">
+        <image src="/image/login.jpg" mode="aspectFill" class="peo" />
+        <span class="contant">
+            <view class="name_time">
+                <span class="name">鸿鸿</span>
+                <span class="time">05-14</span>
+                <image src="/image/dianzan._n_a.png" mode="widthFix" />
+                <span class="num">2</span>
+            </view>
+            <view class="comText">很优秀很优秀</view>
+            <view class="callback">
+                <view class="name_time_t">
+                    <image src="/image/login.jpg" mode="aspectFill" class="peo" />
+                    <span class="name">鸿鸿</span>
+                    <image class="dianzan" src="/image/dianzan_n.png" mode="widthFix" />
+                    <span class="num">2</span>
+                </view>
+                <view class="comText_t">在这个非常时刻,我们更应该团结一心,共同对抗流感病毒</view>
+            </view>
+        </span>
+    </view>
+    <!--  -->
+    <view class="historyZan">
+        <span class="list">
+            <image class="img" src="/image/login.jpg" mode="aspectFill" />
+            <span class="contant">
+                <view class="name_time">
+                    <span class="name">鸿鸿</span>
+                    <image src="/image/dianzan._n_a.png" mode="widthFix" />
+                    <span class="num">赞</span>
+                </view>
+                <view class="time">1天前</view>
+            </span>
+        </span>
+    </view>
+    <!-- 底部导航条 -->
+    <view class="btnNav">
+        <span class="input">
+            <input placeholder="给她留个言吧…" />
+        </span>
+        <span class="child" wx:for='{{btnNav}}' wx:key='index'>
+            <image src="{{item.img}}" mode="aspectFit" />
+            {{item.val}}
+        </span>
+    </view>
+</view>

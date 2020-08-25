@@ -1,0 +1,168 @@
+#fuLogin {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+
+    .bg {
+
+        height: 1rpx;
+        width: 100%;
+
+    }
+
+    .contant {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 32rpx;
+        color: #ffff;
+        font-weight: 500;
+
+        .van-button__text {
+            display: flex;
+            align-items: center;
+        }
+
+        .van-button {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border-radius: 50rpx;
+            font-weight: 500;
+            margin: 0 auto;
+            width: 340rpx;
+            color: #559eff;
+            border: 1px solid #559eff;
+
+            image {
+                height: 1rpx;
+                width: 48rpx;
+                margin-right: 20rpx;
+            }
+        }
+    }
+
+    .child {
+        margin-bottom: 50rpx;
+        font-weight: 500;
+        animation: mymove .8s;
+
+    }
+
+    .first {
+
+        // animation: 3s linear ;
+    }
+}
+
+// 
+.van-popup {
+    background: none !important;
+}
+
+// 
+.alertFu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .alert {
+        width: calc(100vw - 200rpx);
+        padding: 52rpx 36rpx 54rpx;
+        border-radius: 40rpx;
+        background: rgba(255, 255, 255, 1);
+
+        .nav {
+            font-size: 52rpx;
+            color: #559EFF;
+            font-weight: 500;
+        }
+    }
+
+    .post {
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 1px 5px 0px rgba(160, 187, 225, 0.6);
+        border-radius: 46rpx;
+        height: 92rpx;
+        padding: 0 20rpx;
+        overflow: hidden;
+        margin-top: 48rpx;
+
+        .input {
+            flex: 1;
+            margin-right: 20rpx;
+
+            input {
+                padding-left: 10rpx;
+                font-size: 32rpx;
+                width: 100%;
+            }
+        }
+
+        .van-button {
+            color: #CCCCCC;
+            font-size: 28rpx;
+            padding: 0;
+            margin: 0;
+            border: none;
+            border-left: 1px solid rgb(207, 207, 207);
+            height: 40rpx;
+            padding-left: 20rpx;
+
+        }
+
+    }
+    .red{
+        .van-button {
+            color: #FC554F;
+        }
+    }
+   
+    .btn {
+        margin: 64rpx auto 0;
+        display: flex;
+        justify-content: center;
+        .van-button {
+            width: 430rpx;
+            height: 96rpx;
+            background: rgba(204, 204, 204, 1);
+            border-radius: 48rpx;
+            font-size:32rpx;
+            font-weight:500;
+            color: #fff;
+        }
+    }
+    .blue{
+        .van-button{
+            background: #559EFF;
+        }
+    }
+
+    .close{
+        margin-top: 90rpx;
+        image{
+            height:1rpx;
+            width:78rpx;
+        }
+    }
+}
+
+@keyframes mymove {
+    from {
+        transform: translateY(300rpx);
+        opacity: .3;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

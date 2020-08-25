@@ -1,0 +1,102 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-18 09:12:13
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-18 09:12:41
+ * @Description: 车位租用
+ */ -->
+<view id="fuParkRental">
+    <!--  -->
+    <view class="address">
+        <span class="contant">
+            <view class="name">元邦山清水秀花园停车场</view>
+            <view class="addr">
+                <image src="" mode="widthFix" />
+                广州市花都山前大道1242号
+            </view>
+        </span>
+    </view>
+    <!--  -->
+    <view class="detail" wx:for="{{postList}}" wx:key="index">
+        <view class="post" wx:if="{{index!=2&&index!=4}}">
+            <span class="name">{{item.name}}</span>
+            <span class="input">
+                <input placeholder="{{item.plr}}" value="{{item.val}}" bindinput="inputFN" data-name="{{'postList['+index+'].val'}}" />
+            </span>
+        </view>
+        <view class="rentTime" wx:if="{{index==2}}">
+            <view class="nav">{{item.name}}</view>
+            <scroll-view scroll-x="true">
+                <span class="child {{indexc==item.val?'choose':''}}" bindtap="chooseFN" data-index="{{indexc}}" wx:for="{{chooseList}}" wx:for-item="itemc" wx:for-index="indexc" wx:key="indexc">
+                    <view class="name">{{itemc.name}}</view>
+                    <view class="pri">{{itemc.pri}}</view>
+                    <view class="val">{{itemc.val}}</view>
+                </span>
+            </scroll-view>
+        </view>
+        <view class="choosePark" wx:if="{{index==4}}">
+            <span class="name">{{item.name}}</span>
+            <span class="val">{{item.val}}</span>
+            <image src="/image/arrow.png" mode="widthFix" />
+        </view>
+    </view>
+    <!--  -->
+    <view class="argee">
+        <radio class="radio" value="r1" color="#559EFF" checked="true" />
+        我已阅读
+        <span class="blue">《车位租用须知》</span>
+        并同意
+    </view>
+    <!--  -->
+    <view class="payNow">
+        <van-button>提  交</van-button>
+    </view>
+    <!-- 弹窗 -->
+    <van-popup show="{{ showPark }}" position="bottom">
+        <view class="fuChooseAlert">
+            <view class="navtop">
+                <image src="/image/park_p.png" mode="widthFix" />
+                <span class="name">当前选择车位</span>
+                <span class="val">
+                    <span class="num">1</span>
+                    栋
+                    <span class="num">A102</span>
+                    号
+                </span>
+            </view>
+            <view class="contantBtn">
+                <scroll-view class="chooseFun" scroll-y="{{true}}">
+                    <view class="child {{funActive==index?'funActive':''}}" wx:for="{{funList}}" wx:key="index" data-index="{{index}}" bindtap="funFN">
+                        {{item}}
+                    </view>
+                </scroll-view>
+                <scroll-view class="chooseContant" scroll-y="true">
+                    <view class="flexContant">
+                        <span class="child {{index==1?'packC':''}}" wx:for="{{20}}" wx:key="index">
+                            A{{index}}
+                        </span>
+                    </view>
+                </scroll-view>
+            </view>
+        </view>
+    </van-popup>
+    <!-- 成功弹窗 -->
+
+    <van-popup show="{{ showTip }}">
+        <view class="Code">
+            <view class="bwAlert">
+                <view class="detail">
+                    <image src="/image/zlcg_p.png" mode="widthFix" />
+                </view>
+                <view class="tip">车位租用提交成功!</view>
+                <view class="tipMin">
+                    我们将在1~3个工作日内审核订单,通过后会生
+                    <view>成线上合同,确认内容并付款后次日生效</view>
+                </view>
+                <view class="btn" bindtap="closeFN" data-name="showTime">
+                    <van-button>确  定</van-button>
+                </view>
+            </view>
+        </view>
+    </van-popup>
+</view>

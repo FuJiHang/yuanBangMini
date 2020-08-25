@@ -1,0 +1,74 @@
+.fuRealInfo {
+
+        margin: 0 20rpx 28rpx;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 0.5);
+        border-radius: 8rpx;
+        padding: 22rpx 14rpx 20rpx 22rpx;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        margin-bottom: 28rpx;
+
+        .img {
+            height: 140rpx;
+            width: 190rpx;
+            margin-left: 20rpx;
+        }
+
+        .contant {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 140rpx;
+
+            .name {
+                color: #282828;
+                font-size: 32rpx;
+
+                display: -webkit-box;
+                -webkit-line-clamp: 2; //超出多少行
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                word-break: break-all;
+
+                image {
+                    width: 34rpx;
+                    height: 1rpx;
+                    margin-right: 6rpx;
+                }
+
+                .n_i {
+                    margin-top: 0;
+                    margin-left: 6rpx;
+                    margin-right: 0;
+                    width: 56rpx;
+                }
+            }
+
+            .see_time {
+                display: flex;
+                color: #9C9C9C;
+                font-size: 28rpx;
+
+                .time {
+                    flex: 1;
+                }
+
+                .see {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 15rpx;
+
+                    image {
+                        width: 24rpx;
+                        height: 1rpx;
+                        margin-right: 4rpx;
+                    }
+                }
+            }
+        }
+    
+
+}

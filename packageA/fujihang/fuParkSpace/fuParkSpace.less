@@ -1,0 +1,184 @@
+#fuParkSpace {
+
+
+    // 搜索
+    .seach {
+        background: rgba(246, 246, 246, 1);
+        border-radius: 40rpx;
+        margin: 18rpx 28rpx;
+        position: relative;
+        height: 80rpx;
+        display: flex;
+        align-items: center;
+
+        .tip {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32rpx;
+            color: #585858;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            image {
+                height: 1rpx;
+                width: 44rpx;
+                margin-right: 24rpx;
+            }
+        }
+
+        input {
+            flex: 1;
+            padding: 0 20rpx;
+            color: #585858;
+            font-size: 32rpx;
+            text-align: center;
+        }
+    }
+
+    // 轮播图
+    .swiper {
+        background: #fff;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 16rpx solid #fff;
+
+        .dot {
+            position: absolute;
+            bottom: 12rpx;
+            width: calc(100% - 64rpx);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 32rpx;
+
+            .child {
+                margin: 0 10rpx;
+                width: 20rpx;
+                height: 8rpx;
+                background: rgba(255, 255, 255, 1);
+            }
+
+            .hot {
+                background: rgba(85, 158, 255, 1);
+            }
+        }
+
+        swiper {
+            padding: 0 32rpx;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .item-img {
+            height: 1rpx;
+            width: 100%;
+            border-radius: 12rpx;
+
+        }
+
+    }
+
+    // 
+    .serve {
+        border-top: 10rpx solid rgb(246, 246, 246);
+
+        .nav {
+            padding: 26rpx 32rpx 0;
+            color: #282828;
+            font-size: 34rpx;
+            font-weight: 500;
+        }
+
+        .contant {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .left {
+                height: 1rpx;
+                width: 376rpx;
+            }
+
+            .right {
+                height: 376rpx;
+                overflow: hidden;
+
+                .img {
+                    image {
+                        height: 1rpx;
+                        width: 349rpx;
+                    }
+                }
+            }
+        }
+
+        .phone {
+            display: flex;
+            align-items: center;
+            padding: 16rpx 32rpx 24rpx;
+
+            .img {
+                width: 94rpx;
+                height: 1rpx;
+            }
+
+            .val {
+                font-size: 28rpx;
+                color: #303030;
+                margin: 0 48rpx 0 22rpx;
+            }
+
+            .number {
+                background: rgba(245, 245, 244, 1);
+                box-shadow: 0px 1px 5px 0px rgba(208, 208, 208, 0.5);
+                border-radius: 40rpx;
+                padding: 2rpx 32rpx;
+                font-size: 32rpx;
+                color: #303030;
+                display: flex;
+                align-items: center;
+
+                image {
+                    height: 1rpx;
+                    width: 50rpx;
+                }
+            }
+        }
+    }
+
+    // 实时资讯等
+    .news {
+        border-top: 10rpx solid rgb(246, 246, 246);
+        .van-tab {
+            padding: 0 20rpx;
+            flex: none;
+
+            .van-ellipsis {
+                font-size: 32rpx;
+                color: #686868;
+                font-weight: bold;
+            }
+        }
+
+        .van-tab--active {
+            .van-ellipsis {
+                color: #559EFF !important;
+            }
+
+            font-size: 34rpx !important;
+        }
+
+        .contantNew {
+            padding: 24rpx 0 1rpx;
+            box-sizing: border-box;
+            background: #fff;
+
+
+
+        }
+    }
+}

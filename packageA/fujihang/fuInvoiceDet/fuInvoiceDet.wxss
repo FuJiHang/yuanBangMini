@@ -1,0 +1,1 @@
+page{height:100%;background:#fff}#fuInvoiceDet{padding-top:40rpx}#fuInvoiceDet .postList{display:flex;align-items:baseline;margin-bottom:40rpx;padding:0 40rpx}#fuInvoiceDet .postList .name{font-size:34rpx;color:#282828;font-weight:500;width:24%}#fuInvoiceDet .postList .val{flex:1;background:#f6f6f6;border-radius:10rpx;padding:16rpx 34rpx;color:#686868;font-size:30rpx}

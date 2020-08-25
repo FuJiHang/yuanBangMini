@@ -1,0 +1,785 @@
+page {
+    overflow: hidden;
+    height: 100%;
+    background: #fff;
+}
+
+
+#fuPay {
+
+    .bw {
+        flex: 1;
+        background: #fff;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    //头部 
+    .navTop {
+        display: flex;
+        align-items: center;
+        padding: 32rpx 32rpx 28rpx;
+        border-top: 1px solid rgb(240, 240, 240);
+        border-bottom: 1px solid rgb(240, 240, 240);
+
+        image {
+            height: 1rpx;
+            width: 48rpx;
+        }
+
+        .name {
+            font-size: 36rpx;
+            flex: 1;
+            margin: 0 14rpx;
+        }
+
+        .van-button {
+            width: 152rpx;
+            height: 52rpx;
+            background: rgba(85, 158, 255, 1);
+            border-radius: 34rpx;
+            border: none;
+            font-size: 26rpx;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    // 功能内容
+    .funtion {
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+
+        .type {
+            height: 100%;
+            overflow: hidden;
+            font-size: 30rpx;
+            color: #999999;
+            font-weight: 500;
+            width: 160rpx;
+
+            scroll-view {
+                background: #F6F6F6;
+                height: 100%;
+                width: 100%;
+
+                .child {
+                    padding: 36rpx 6rpx 36rpx 14rpx;
+                    width: 100%;
+                    box-sizing: border-box;
+                    border-left: 10rpx solid #F6F6F6;
+                }
+
+                .funActive {
+                    background: #fff;
+                    border-color: #559EFF;
+                    color: #363636;
+                }
+            }
+        }
+    }
+
+    // 当前未缴
+    .payCont {
+
+        .van-tab--active {
+            font-weight: 500;
+
+            .van-ellipsis {
+                color: #559EFF !important;
+            }
+        }
+
+        .van-tab__pane--active {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .van-tabs {
+            height: 100%;
+            overflow: hidden;
+
+            .van-tabs__track,
+            .van-tabs__content {
+                overflow: hidden;
+                height: 100%;
+
+            }
+
+        }
+
+        .scollV {
+            height: 100%;
+            padding-top: 30rpx;
+
+            .child {
+                display: flex;
+                align-items: flex-start;
+                background: rgba(255, 255, 255, 1);
+                box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 0.5);
+                border-radius: 10rpx;
+                margin: 0 24rpx 22rpx;
+                box-sizing: border-box;
+                border: 1px solid rgb(240, 240, 240);
+                padding: 28rpx 14rpx 15rpx 12rpx;
+                height: 120rpx;
+                overflow: hidden;
+
+                .contant {
+                    flex: 1;
+
+                    .choose_pri {
+                        box-sizing: border-box;
+                        font-size: 32rpx;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .price {
+                            font-weight: 500;
+                            color: #282828;
+                        }
+
+                        .time {
+                            color: #5F5F5F;
+                        }
+                    }
+
+                    .arrow {
+                        box-sizing: border-box;
+                        text-align: right;
+                        padding-bottom: 15rpx;
+
+                        image {
+                            height: 1rpx;
+                            width: 20rpx;
+                        }
+                    }
+
+                    .nav {
+                        padding-top: 12rpx;
+                        font-size: 24rpx;
+                        color: #878787;
+                        border-top: 1px solid rgb(240, 240, 240);
+                    }
+
+                    .detail {
+                        margin-top: 8rpx;
+                        display: flex;
+                        align-items: center;
+                        margin-left: -6rpx;
+                        font-size: 28rpx;
+
+                        .name {
+
+                            color: #5F5F5F;
+                            flex: 1;
+                        }
+
+                        .price {
+                            color: #282828;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .radio {
+                    transform: scale(0.7);
+                }
+            }
+
+            .openChild {
+                height: auto;
+                overflow: auto;
+            }
+        }
+
+    }
+
+    // 费用预存
+    .deposit {
+
+        .chaoZhuo {
+            overflow: auto;
+            height: 100%;
+        }
+
+        .balance {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 0.5);
+            border-radius: 10rpx;
+            border: 1px solid rgb(240, 240, 240);
+            margin: 30rpx 26rpx;
+            padding: 20rpx 26rpx 28rpx;
+            display: flex;
+            align-items: flex-start;
+
+            image {
+                height: 1rpx;
+                width: 42rpx;
+            }
+
+            .contant {
+                margin-left: 18rpx;
+                flex: 1;
+
+                .name {
+                    font-size: 30rpx;
+                    color: #5F5F5F;
+                    margin-bottom: 20rpx;
+                }
+
+                .pri_his {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .pri {
+                        font-size: 36rpx;
+                        color: #282828;
+                        font-weight: 500;
+                    }
+
+                    .his {
+                        width: 140rpx;
+                        height: 52rpx;
+                        background: rgba(255, 245, 228, 1);
+                        border-radius: 26rpx;
+                        border: 1px solid rgba(239, 228, 217, 1);
+                        font-size: 26rpx;
+                        color: #FFA055;
+                        text-align: center;
+                        line-height: 52rpx;
+                    }
+                }
+            }
+        }
+
+        .pre {
+            padding: 20rpx 26rpx 28rpx;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 0.5);
+            border-radius: 10rpx;
+            border: 1px solid rgb(240, 240, 240);
+            margin: 0 26rpx 22rpx;
+
+            .name {
+                font-size: 34rpx;
+                color: #282828;
+                margin-bottom: 40rpx;
+                font-weight: 500;
+            }
+
+            .num {
+                display: flex;
+                align-items: center;
+                font-size: 60rpx;
+
+                .input {
+                    border-bottom: 1px solid rgb(204, 204, 204);
+                    flex: 1;
+                    padding: 10rpx;
+                    margin: 0 10rpx;
+                    box-sizing: border-box;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                image {
+                    height: 1rpx;
+                    width: 40rpx;
+                }
+            }
+        }
+
+        .tip {
+            margin: 0 26rpx 100rpx;
+            color: #AFAFAF;
+            font-size: 28rpx;
+        }
+
+        .payNow {
+            padding: 0 52rpx;
+            box-sizing: border-box;
+
+            .van-button {
+                width: 100%;
+                height: 86rpx;
+                background: rgba(85, 158, 255, 1);
+                border-radius: 48rpx;
+                color: #fff;
+                font-size: 36rpx;
+                font-weight: 500;
+            }
+        }
+
+        .history {
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+
+            scroll-view {
+                padding: 12rpx 0;
+                flex: 1;
+
+                .child {
+                    margin: 12rpx 26rpx;
+                    background: rgba(255, 255, 255, 1);
+                    box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 0.5);
+                    border-radius: 5px;
+                    border: 1px solid rgb(240, 240, 240);
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding: 28rpx;
+
+                    image {
+                        height: 1rpx;
+                        width: 60rpx;
+                    }
+
+                    .contant {
+                        flex: 1;
+                        margin: 0 16rpx;
+
+                        .name {
+                            font-size: 30rpx;
+                            color: #292929;
+                        }
+
+                        .time {
+                            font-size: 26rpx;
+                            color: #989898;
+
+                        }
+
+                    }
+
+                    .price {
+                        font-size: 32rpx;
+                        color: #282828;
+                    }
+                }
+            }
+
+
+            .nav {
+                background: rgba(246, 246, 246, 1);
+                border-bottom: 1px solid rgba(230, 230, 230, 1);
+                border-left: 1px solid rgba(230, 230, 230, 1);
+
+                padding: 22rpx 26rpx;
+
+                image {
+                    height: 1rpx;
+                    width: 30rpx;
+                    transform: rotateZ(90deg);
+                }
+            }
+
+        }
+    }
+
+    // 历史缴费
+    .historyPay {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30rpx 0;
+
+            .child {
+                color: #559EFF;
+                font-size: 32rpx;
+                font-weight: 500;
+                padding: 12rpx 20rpx 12rpx 24rpx;
+                background: rgba(244, 244, 244, 1);
+                border-radius: 6rpx;
+                margin: 0 14rpx;
+            }
+        }
+
+        .detail {
+            text-align: center;
+            font-weight: 500;
+            font-size: 32rpx;
+            color: #202020;
+            padding-bottom: 20rpx;
+            margin: 0 20rpx;
+
+        }
+
+        .child {
+            display: flex;
+
+            .flex3 {
+                flex: 3;
+            }
+
+            .flex2 {
+                flex: 2;
+            }
+
+            .flex1 {
+                flex: 1;
+            }
+        }
+
+        .mlr {
+            margin: 0 20rpx;
+            border-bottom: 1px solid rgb(241, 241, 241);
+            padding: 18rpx 0;
+            font-size: 30rpx;
+
+            .flex2,
+            .flex1 {
+                text-align: center;
+            }
+
+            .flex3 {
+                color: #424242;
+            }
+
+            .flex2 {
+                color: #A1A1A1;
+            }
+
+            .flex1 {
+                color: #1F1F1F;
+            }
+
+            .time_pay {
+                margin-top: 20rpx;
+                padding: 18rpx 20rpx;
+                background: rgba(246, 246, 246, 1);
+                color: #A6A6A6;
+                font-size: 26rpx;
+
+                .time {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .pay {
+                    margin-top: 2rpx;
+                }
+            }
+        }
+
+        scroll-view {
+            flex: 1;
+        }
+    }
+
+    // 我的发票
+    .invoice {
+        .scollV {
+            .child {
+                align-items: center;
+
+                .contant {
+                    .name_time {
+                        margin-bottom: 10rpx;
+                    }
+
+                    .name_time,
+                    .val_pri {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .name {
+                        font-size: 32rpx;
+                        color: #282828;
+                    }
+
+                    .time,
+                    .val {
+                        color: #7A7A7A;
+                        font-size: 26rpx;
+                    }
+
+                    .pri {
+                        color: #282828;
+                        font-size: 28rpx;
+                    }
+                }
+            }
+        }
+
+        .toPay {
+            .price {
+                color: #282828 !important;
+            }
+        }
+    }
+
+    // 
+    .btn {
+        padding: 22rpx 26rpx 26rpx;
+        font-size: 32rpx;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgb(241, 241, 241);
+        color: #1F1F1F;
+
+        .val {
+            font-weight: 500;
+        }
+    }
+
+    // 
+    .konbai {
+        height: 200rpx;
+    }
+
+    // 底部导航条
+    .toPay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10rpx 20rpx 10rpx 36rpx;
+        border-top: 1px solid rgb(241, 241, 241);
+        box-sizing: border-box;
+        z-index: 6;
+        background: #fff;
+
+        .radio {
+            transform: scale(0.8);
+        }
+
+        .flex {
+            font-size: 28rpx;
+            flex: 1;
+        }
+
+        .money {
+            text-align: right;
+            margin-right: 10rpx;
+
+            .price {
+                font-weight: 500;
+                font-size: 30rpx;
+                color: #DC3333;
+                line-height: 30rpx;
+            }
+
+            .name {
+                line-height: 0;
+                font-size: 26rpx;
+                line-height: 28rpx;
+                color: #979797;
+            }
+        }
+
+        .van-button {
+            width: 170rpx;
+            height: 60rpx;
+            background: rgba(85, 158, 255, 1);
+            border-radius: 34rpx;
+            border: none;
+            font-size: 27rpx;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    // 时间选择器
+    .van-popup--bottom.van-popup--safe {
+        overflow: hidden;
+        border-radius: 40rpx 40rpx 0px 0px;
+    }
+
+    .timeChoose {
+
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 40rpx 40rpx 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 999;
+
+        .van-hairline--top-bottom {
+            display: none;
+        }
+
+        .contant {}
+
+        .van-picker-column__item--selected {
+            color: #559EFF;
+            font-size: 52rpx;
+            background: rgba(245, 245, 245, 1);
+            border-radius: 5px;
+            padding: 0;
+            margin: 0 30rpx;
+        }
+
+        .padTime {
+            padding: 30rpx 0 10rpx;
+            position: relative;
+            overflow: hidden;
+
+            .lineR {
+                position: absolute;
+                width: 32rpx;
+                height: 8rpx;
+                background: rgba(202, 202, 202, 1);
+                z-index: 5;
+                top: 50%;
+            }
+
+            .one {
+                left: 31.3%;
+            }
+
+            .two {
+                right: 31.3%;
+            }
+        }
+
+        .okbtn {
+            border-top: 10rpx solid rgba(238, 238, 238, 1);
+            position: relative;
+            z-index: 999;
+
+            .van-button {
+                width: 100%;
+                color: #202020;
+                font-size: 36rpx;
+                font-weight: 500;
+                border: none !important;
+                height: 100rpx;
+            }
+        }
+
+        .van-picker-column__item--selected {}
+    }
+
+    // 
+    .fuTimeAlert {
+        background: #fff;
+        border-radius: 40rpx 40rpx 0px 0px;
+        overflow: hidden;
+        flex: 1;
+
+        .okbtn .van-button {
+            width: 100%;
+            color: #202020;
+            font-size: 36rpx;
+            font-weight: 500;
+            border: none !important;
+            height: 100rpx;
+        }
+
+        .wux-date-picker__button--confirm {
+            position: fixed !important;
+            bottom: 0;
+            left: 0;
+            height: 100rpx;
+            width: 100%;
+            opacity: 0;
+            z-index: 8;
+        }
+
+        .wux-date-picker__toolbar {
+            position: absolute !important;
+        }
+
+        .wux-picker-col__indicator::after,
+        ::before {
+            border: none !important;
+        }
+
+        .wux-picker-col__indicator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1 !important;
+        }
+
+        .wux-picker-col__indicator .bgFU {
+            background: rgba(245, 245, 245, 1);
+            height: 110rpx;
+            width: 170rpx;
+
+            border-radius: 10rpx;
+        }
+
+        .wux-picker-col__item--selected {
+            border-radius: 10rpx;
+            margin: 0 50rpx;
+            color: #559EFF !important;
+            font-size: 54rpx !important;
+            font-weight: 500 !important;
+            z-index: 999;
+            position: relative;
+        }
+
+        .wux-date-picker__title {
+            display: none !important;
+        }
+
+        .wux-popup-index--wux-popup,
+        .wux-backdrop {
+            position: relative !important;
+        }
+
+        .wux-backdrop,
+        .wux-backdrop--transparent {
+            position: relative !important;
+        }
+
+        .fuTime {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 280rpx;
+            overflow: hidden;
+            position: relative;
+            padding: 0 30rpx;
+        }
+
+        .line {
+            position: absolute;
+            width: 32rpx;
+            height: 8rpx;
+            background: rgba(202, 202, 202, 1);
+            top: 50%;
+            z-index: 9999;
+        }
+
+        .one {
+            left: 32.5%;
+        }
+
+        .two {
+            right: 32.5%;
+        }
+
+        .okbtn {
+            border-top: 10rpx solid rgba(238, 238, 238, 1);
+            position: relative;
+            z-index: 999;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-23 11:44:06
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-23 11:44:38
+ * @Description: 登陆
+ */ -->
+<view id="fuLogin">
+    <!--  -->
+    <image class="bg" src="/image/login.jpg" mode="widthFix" />
+    <view class="contant">
+        <view class="child first">
+            <van-button>
+                <image src="/image/weixin.png" mode="widthFix" />
+                微信号一键登陆
+            </van-button>
+        </view>
+        <view class="child">游客</view>
+        <view class="child" bindtap="openFN">手机号登陆/注册</view>
+    </view>
+    <!-- 弹窗 -->
+    <van-popup show="{{ showTip }}">
+        <view class="alertFu">
+            <view class="alert">
+                <view class="nav">欢迎加入邦街坊!</view>
+                <view class="post" wx:for='{{postList}}' wx:key='index'>
+                    <span class="input">
+                        <input type="number" placeholder="{{item.plr}}" data-name="{{'postList['+index+'].val'}}" bindinput="inputFN" value="{{item.val}}" />
+                    </span>
+                    <span class="{{postList[0].val?'red':''}}">
+                        <van-button wx:if="{{item.name}}">获取验证码</van-button>
+                    </span>
+                </view>
+                <view class="btn {{postList[1].val?'blue':''}}">
+                    <van-button>登  陆</van-button>
+                </view>
+            </view>
+            <view class="close" bindtap="closeFN">
+                <image src="/image/close_l.png" mode="widthFix" />
+            </view>
+        </view>
+    </van-popup>
+</view>

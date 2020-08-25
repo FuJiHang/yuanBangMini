@@ -1,0 +1,67 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-12 15:30:21
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-12 16:32:48
+ * @Description: 个人中心页面
+ */ -->
+<view id="fuMy">
+    <!-- 头部 -->
+    <view class="people">
+        <image src="/image/house_i.png" mode="aspectFill" />
+        <span class="contant">
+            <span class="name">张强</span>
+            <span class="type">物业经理</span>
+        </span>
+        <image src="" mode="widthFix" />
+    </view>
+    <view class="navTop">
+        <image src="/image/home_p.png" mode="widthFix" />
+        <span class="name">元邦山清水秀花园1栋205</span>
+        <van-button>切换房产</van-button>
+    </view>
+    <!-- 消息积分成员 -->
+    <view class="newStar">
+        <span class="child" wx:for="{{newStar}}" wx:key="index">
+            <image src="" mode="widthFix" />
+            <view class="name">{{item.name}}</view>
+        </span>
+    </view>
+    <!-- 房产商铺 -->
+    <view class="houseStore">
+        <image src="/image/integr_m.png" mode="widthFix" />
+        <image src="/image/store_m.png" mode="widthFix" />
+    </view>
+    <!--  -->
+    <view class="parkLot">
+        <span class="child" wx:for="{{parkLot}}" wx:key="index">
+            <image src="{{item.img}}" mode="widthFix" />
+            <view class="name">{{item.name}}</view>
+        </span>
+    </view>
+    <!-- 我的工具 -->
+    <view class="myTool">
+        <view class="nav">我的工具</view>
+        <view class="contant">
+            <span class="child" wx:for="{{myTool}}" wx:key="index">
+                <image src="{{item.img}}" mode="widthFix" />
+                <view class="name">{{item.name}}</view>
+            </span>
+        </view>
+    </view>
+    <!-- 底部功能 -->
+    <view class="otherFun">
+        <view class="image">
+            <image src="/image/sell_m.png" mode="widthFix" />
+        </view>
+        <view class="child"  wx:for="{{otherFun}}" wx:key="index">
+            <image class="icon" src="{{item.img}}" mode="widthFix" />
+            <span class="flex">
+                {{item.name}}
+            </span>
+            <image class="arrow" src="/image/arrow.png" mode="widthFix" />
+        </view>
+    </view>
+    <!-- 底部导航条 -->
+    <fuTabbar active="2"></fuTabbar>
+</view>

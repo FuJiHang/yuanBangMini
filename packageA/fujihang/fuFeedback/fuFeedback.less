@@ -1,0 +1,117 @@
+#fuFeedback {
+
+
+    // 
+    .chooseList {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 32rpx 26rpx;
+
+        .child {
+            margin: 0 26rpx 20rpx;
+            display: flex;
+            align-items: center;
+            border-radius: 16rpx;
+            border: 1px solid #686868;
+            color: #686868;
+            font-size: 32rpx;
+            font-weight: 500;
+            padding: 15rpx 46rpx;
+
+            .radio {
+                transform: scale(0.8);
+            }
+        }
+
+        .active {
+            border-color: #559EFF;
+            color: #559EFF;
+        }
+    }
+
+    // 
+    // 
+    .quest {
+        margin: 0 48rpx 10rpx;
+        background: rgba(248, 248, 248, 1);
+        padding: 24rpx 40rpx 1rpx;
+
+        textarea {
+            width: 100%;
+            height: 200rpx;
+            overflow: auto;
+        }
+
+        .num {
+            text-align: right;
+            font-size: 30rpx;
+            color: rgba(164, 164, 164, 1);
+
+
+            margin-bottom: 10rpx;
+
+        }
+
+        .border {
+            margin-bottom: 30rpx;
+            padding: 20rpx 0;
+            border-bottom: 1px solid rgb(236, 236, 236);
+        }
+
+        .imgList {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .add {
+                width: 190rpx;
+                height: 190rpx;
+                background: rgba(221, 221, 221, 1);
+                margin-bottom: 33rpx;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 120rpx;
+            }
+        }
+    }
+
+    textarea {
+        font-size: 34rpx;
+    }
+
+    // 
+    .payNow {
+        padding: 106rpx 52rpx 60rpx;
+        box-sizing: border-box;
+        width: 100%;
+
+        .van-button {
+            width: 100%;
+            height: 86rpx;
+            background: rgba(85, 158, 255, 1);
+            border-radius: 48rpx;
+            color: #fff;
+            font-size: 36rpx;
+            font-weight: 500;
+        }
+    }
+    // 
+    .myFeed{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 42rpx;
+        padding: 32rpx 0;
+        border-top: 1px solid rgb(235, 235, 235);
+        color: #404040;
+        font-size: 34rpx;
+        align-items: center;
+        .arrow{
+            height: 1rpx;
+            width: 28rpx;
+            transform: rotateZ(-90deg);
+        }
+    }
+}

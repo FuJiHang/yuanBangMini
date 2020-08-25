@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "fuTabbar":"../../../components/fujihang/fuTabbar/fuTabbar",
+    "fuRealInfo":"../../../components/fujihang/fuRealInfo/fuRealInfo"
+  },
+  "navigationBarTitleText":"首页"
+} 

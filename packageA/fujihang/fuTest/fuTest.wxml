@@ -1,0 +1,11 @@
+<view class="fuTimeAlert">
+  <view style="height:40rpx;"></view>
+  <view class="fuTime">
+    <wux-date-picker visible="{{ true }}" itemStyle="color:#A6A6A6;font-size:40rpx;" data-index="1" data-mode="datetime" bind:confirm="onConfirm" controlled mode="date" value="{{ value1 }}" itemHeight="50" indicatorClass="timeChange" maskStyle="opacity: 0;"  bind:visibleChange="onVisibleChange" />
+    <view class="line one"></view>
+    <view class="line two"></view>
+  </view>
+  <view class="okbtn" data-index="1" data-mode="datetime" bind:confirm="onConfirm">
+    <van-button>确定</van-button>
+  </view>
+</view>

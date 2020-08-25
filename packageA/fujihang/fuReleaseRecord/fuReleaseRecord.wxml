@@ -1,0 +1,24 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-19 17:23:27
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-19 17:28:00
+ * @Description: 放行记录
+ */ -->
+<view id="fuReleaseRecord">
+    <!--  -->
+    <!--  -->
+    <view class="list">
+        <view class="nav">
+            <span class="name">王鸿先生</span>
+            <span class="val ok">待放行</span>
+        </view>
+        <!--  -->
+        <view class="peo_midi">
+            <span class="child">人数: 2人</span>
+            <span class="child">目的: 探访</span>
+        </view>
+        <view class="data">预约时间: 2020年5月5日  12:30</view>
+        <view class="time">2020-5-4 20:24</view>
+    </view>
+</view>

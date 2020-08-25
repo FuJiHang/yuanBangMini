@@ -1,0 +1,35 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-13 17:57:39
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-13 17:59:04
+ * @Description: 我的发票
+ */ -->
+<view id="fuMyInvoice">
+    <!--  -->
+    <view class="chooseType">
+        <view class="name">选择发票类型</view>
+        <view class="contant">
+            <span class="child" wx:for="{{chooseList}}" wx:key="index">
+                <radio class="radio" value="r1" color="#559EFF" checked="true" />
+                {{item}}
+            </span>
+        </view>
+    </view>
+    <!--  -->
+    <block wx:for="{{postList}}" wx:key="index">
+        <view class="nav">{{item.name}}</view>
+        <view class="bw">
+            <view class="post" wx:for-index="indexc" wx:for-item="itemc" wx:for="{{item.data}}" wx:key="indexc">
+                <span class="name">{{itemc.name}}</span>
+                <span class="input">
+                    <input placeholder="{{itemc.plr}}" value="{{itemc.val}}" bindinput="inputFN" data-name="{{'postList['+index+'].data['+indexc+'].val'}}" />
+                </span>
+            </view>
+        </view>
+    </block>
+    <!--  -->
+    <view class="payNow">
+        <van-button>立即支付</van-button>
+    </view>
+</view>

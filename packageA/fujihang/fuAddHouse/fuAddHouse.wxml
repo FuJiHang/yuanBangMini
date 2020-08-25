@@ -1,0 +1,30 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-18 17:57:16
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-18 17:57:38
+ * @Description: 新增房产
+ */ -->
+<view id="fuAddHouse">
+    <view class="navTop">
+        <image src="/image/home_p.png" mode="widthFix" />
+        <span class="name">元邦山清水秀花园1栋205</span>
+        <van-button>重新选择</van-button>
+    </view>
+    <!--  -->
+    <block wx:for="{{postList}}" wx:key="index">
+        <view class="nav">{{item.name}}</view>
+        <view class="bw">
+            <view class="post" wx:for-index="indexc" wx:for-item="itemc" wx:for="{{item.data}}" wx:key="indexc">
+                <span class="name">{{itemc.name}}</span>
+                <span class="input">
+                    <input placeholder="{{itemc.plr}}" value="{{itemc.val}}" bindinput="inputFN" data-name="{{'postList['+index+'].data['+indexc+'].val'}}" />
+                </span>
+            </view>
+        </view>
+    </block>
+    <!--  -->
+    <view class="payNow">
+        <van-button>提  交</van-button>
+    </view>
+</view>

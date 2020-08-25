@@ -1,0 +1,23 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-19 09:40:06
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-19 09:42:02
+ * @Description: 我的报修
+ */ -->
+<view id="fuMyRepair">
+    <!--  -->
+    <!--  -->
+    <van-tabs active="{{ newActive }}" line-height="4" line-width="30" swipeable="true" color="#559EFF" bind:change="newChange">
+        <van-tab wx:for="{{dataList}}" wx:key="index" title="{{item.name}}">
+            <view class="news">
+                <view class="nav">
+                    <span class="name">室内报修</span>
+                    <span class="val ok">处理中</span>
+                </view>
+                <view class="contant">洗手池堵塞,无法下水</view>
+                <view class="time">2020-5-27 20:24</view>
+            </view>
+        </van-tab>
+    </van-tabs>
+</view>

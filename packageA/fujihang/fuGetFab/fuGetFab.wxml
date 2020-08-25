@@ -1,0 +1,40 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-22 11:50:10
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-22 11:51:09
+ * @Description: 收到的赞
+ */ -->
+<view id="fuGetFab">
+    <!--  -->
+    <view class="fuRealInfo">
+        <view class="name_time">
+            <image class="peoss" src="/image/house_i.png" mode="aspectFill" />
+            <span class="name">我</span>
+            <span class="type">街坊谈</span>
+            <span class="val">发布</span>
+            <span class="time">2020-4-20  20:20</span>
+        </view>
+        <view class="detail">
+            <span class="contant">
+                <view class="name">
+                    <image src="/image/hot_i.png" mode="widthFix" />
+                    元邦小区防疫科普,终结疫情从你我做起终结疫情从你我做起终结疫情从你我做起
+                    <image class="n_i" src="/image/new_i.png" mode="widthFix" />
+                </view>
+                <view class="see_time">
+                    <span class="time">2020-6-22</span>
+                    <span class="see">
+                        <image src="/image/good_i.png" mode="widthFix" />
+                        180
+                    </span>
+                    <span class="see">
+                        <image src="/image/comm_i.png" mode="widthFix" />
+                        180
+                    </span>
+                </view>
+            </span>
+            <image class="img" src="/image/healthy_i.png" mode="aspectFill" />
+        </view>
+    </view>
+</view>

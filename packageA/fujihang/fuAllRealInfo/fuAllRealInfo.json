@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "fuRealInfo":"../../../components/fujihang/fuRealInfo/fuRealInfo"
+
+  },
+  "navigationBarTitleText":"资讯"
+  
+}

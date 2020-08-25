@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "fuPackSpace":"/components/fujihang/fuPackSpace/fuPackSpace"
+  },
+  "navigationBarTitleText":"停车位"
+}

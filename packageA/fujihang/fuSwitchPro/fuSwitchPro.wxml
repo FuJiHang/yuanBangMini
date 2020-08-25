@@ -1,0 +1,46 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-16 18:06:42
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-16 18:07:16
+ * @Description: 切换房产
+ */ -->
+<view id="fuSwitchPro">
+    <!--  -->
+    <view class="nows">
+        <view class="nav">
+            <span class="name">当前房产</span>
+            <span class="val">设为默认</span>
+        </view>
+        <view class="child">
+            <image class="bg" src="/image/dizhi_sr.png" mode="widthFix" />
+            <view class="contant">
+                <view class="name_img">
+                    <image src="/image/dizhi_sr.png" mode="aspectFill" />
+                    <span class="name">元bang</span>
+                    <span class="t">业主</span>
+                </view>
+                <view class="address">元邦山清水秀花园1栋205</view>
+            </view>
+        </view>
+    </view>
+    <!--  -->
+    <view class="have">
+        <view class="nav">
+            <span class="name">现有房产</span>
+        </view>
+        <scroll-view scroll-y="{{true}}">
+            <view class="child">
+                <view class="name_img">
+                    <image src="/image/dizhi_sb.png" mode="aspectFill" />
+                    <span class="name">元bang</span>
+                    <span class="t">业主</span>
+                </view>
+                <view class="address">元邦山清水秀花园1栋205</view>
+                <view class="moren">默认</view>
+            </view>
+        </scroll-view>
+    </view>
+    <!--  -->
+    <view class="que">房产问题反馈</view>
+</view>

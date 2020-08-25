@@ -1,0 +1,26 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-22 14:06:23
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-22 14:06:46
+ * @Description: 收到的评论
+ */ -->
+<view id="fuGetCom">
+    <!--  -->
+    <view class="list">
+        <view class="bw">
+            <span class="contant">
+                <view class="name_img">
+                    <image src="/image/banner.jpg" mode="aspectFill" />
+                    <span class="name">Jason</span>
+                </view>
+                <view class="com">
+                    <span class="hui">回复了</span>
+                    你 : 小区对于安全防控方面做的很到位
+                </view>
+                <view class="time">2020-4-20  20:20</view>
+            </span>
+            <image src="/image/banner.jpg" mode="aspectFill" class="img" />
+        </view>
+    </view>
+</view>

@@ -1,0 +1,28 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-16 16:16:19
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-16 16:19:14
+ * @Description: 资讯
+ */ -->
+<view class="fuRealInfo">
+    <span class="contant">
+        <view class="name">
+            <image src="/image/hot_i.png" mode="widthFix" />
+            元邦小区防疫科普,终结疫情从你我做起终结疫情从你我做起终结疫情从你我做起
+            <image class="n_i" src="/image/new_i.png" mode="widthFix" />
+        </view>
+        <view class="see_time">
+            <span class="time">2020-6-22</span>
+            <span class="see">
+                <image src="/image/good_i.png" mode="widthFix" />
+                180
+            </span>
+            <span class="see">
+                <image src="/image/comm_i.png" mode="widthFix" />
+                180
+            </span>
+        </view>
+    </span>
+    <image class="img" src="/image/healthy_i.png" mode="aspectFill" />
+</view>

@@ -1,0 +1,73 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-17 16:46:17
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-17 16:50:52
+ * @Description: 预约车位
+ */ -->
+<view id="fuReservePack">
+    <!-- 互助停车 -->
+    <view class="address">
+        <span class="contant">
+            <view class="name">元邦山清水秀花园停车场</view>
+            <view class="addr">
+                <image src="" mode="widthFix" />
+                广州市花都山前大道1242号
+            </view>
+        </span>
+        <van-button>互助停车</van-button>
+    </view>
+    <!-- 规则 -->
+    <view class="rule">
+        <view class="feeRule">
+            <span class="left">
+                <view class="time">时间</view>
+                <view class="name">收费规则</view>
+            </span>
+            <span class="right">
+                <view class="time">
+                    <span class="child">8:00 - 22:00</span>
+                    <span class="child">22:00 - 8:00 次日</span>
+                </view>
+                <view class="role1">
+                    <span class="child">8元/小时 64元封顶</span>
+                    <span class="child">8元/小时 20元封顶</span>
+                </view>
+                <view class="role2">全天84元封顶</view>
+            </span>
+        </view>
+    </view>
+    <!--  -->
+    <view class="bw">
+        <view class="postList" wx:for="{{dataList}}" wx:key="index">
+            <span class="name">{{item.name}}</span>
+            <span class="val">
+                <input type="{{item.type}}" value="{{item.data}}" placeholder="{{item.plr}}" bindinput="inputFN" data-name="{{'dataList['+index+'].data'}}" />
+            </span>
+        </view>
+        <view class="payNow">
+            <van-button>预  约</van-button>
+        </view>
+    </view>
+    <!-- 提示 -->
+    <view class="nav">温馨提示</view>
+    <view class="tip">车位预约成功后,我们将为您保留车位,车牌识别,无需取卡.</view>
+    <!-- 预约成功弹窗 -->
+    <van-popup show="{{ showTip }}">
+        <view class="Code">
+            <view class="bwAlert">
+                <view class="detail">
+                    <image src="/image/yuyue_r.png" mode="widthFix" />
+                </view>
+                <view class="tip">车位预约成功!</view>
+                <view class="tipMin">
+                    我们将在预约时间核实车辆进场情况,如有特殊
+                    <view>情况请提前取消预约</view>
+                </view>
+                <view class="btn" bindtap="closeFN" data-name="showTime">
+                    <van-button>确  定</van-button>
+                </view>
+            </view>
+        </view>
+    </van-popup>
+</view>

@@ -1,0 +1,296 @@
+#fuMyNew {
+    // 
+
+    .people {
+
+        color: #303030;
+        display: flex;
+        align-items: center;
+        padding: 36rpx 52rpx 0;
+        background: #fff;
+
+        image {
+            height: 120rpx;
+            width: 120rpx;
+            border-radius: 50%;
+            margin-right: 20rpx;
+        }
+
+        .contant {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 34rpx;
+            margin-right: 14rpx;
+
+        }
+
+        .type {
+            background: rgba(242, 244, 247, 1);
+            border: 1px solid rgba(166, 197, 246, 1);
+            padding: 2rpx 10rpx;
+
+            font-size: 22rpx;
+            color: rgba(78, 140, 238, 1);
+        }
+    }
+
+    // 
+    .funtian {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 1px 5px 0px rgba(179, 199, 222, 0.5);
+        border-radius: 20rpx;
+        margin: 24rpx 32rpx;
+        padding: 20rpx 0 26rpx;
+
+        .child {
+            flex: 1;
+
+            .val {
+                font-size: 40rpx;
+                font-weight: 500;
+                color: #559EFF;
+            }
+
+            .name {
+                font-size: 28rpx;
+                color: #686868;
+            }
+        }
+    }
+
+    // 
+
+    .van-tab--active {
+        .van-ellipsis {
+            color: #559EFF !important;
+        }
+
+
+    }
+
+    .van-ellipsis {
+        font-size: 32rpx;
+        color: #686868;
+    }
+
+    // 动态
+    .dynamic {
+        display: flex;
+        // align-items:flex-start;
+        padding: 32rpx 0;
+        margin: 0 20rpx 32rpx;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgb(243, 243, 243);
+
+        .peoss {
+            border-radius: 50%;
+            width: 74rpx;
+            height: 74rpx;
+        }
+
+        .contant {
+            flex: 1;
+            margin-left: 12rpx;
+
+            .name_time {
+                display: flex;
+                align-items: flex-end;
+                margin-top: 16rpx;
+
+                .name {
+                    font-weight: 500;
+                    color: #559EFF;
+                    font-size: 32rpx;
+                    margin: 0 22rpx 0 0;
+                }
+
+                .type {
+                    font-size: 28rpx;
+                    color: #686868;
+                    position: relative;
+                    margin-right: 20rpx;
+
+                    .arrow {
+                        bottom: -33rpx;
+                        position: absolute;
+                        width: 30rpx;
+                        height: 30rpx;
+                        // border: 1px solid rgb(238, 238, 238);
+                        transform: rotateZ(45deg);
+                        left: 20%;
+                        background: #fff;
+                        border-left: 1px solid rgb(245, 245, 245);
+                        border-top: 1px solid rgb(245, 245, 245);
+                        z-index: 2;
+
+                    }
+                }
+
+                .val {
+                    color: #868686;
+                    font-size: 24rpx;
+                    flex: 1;
+                }
+
+                .time {
+                    color: #999;
+                    font-size: 24rpx;
+                }
+            }
+
+            .detail {
+                padding: 20rpx 0 18rpx;
+                color: #282828;
+                box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 0.5);
+                box-sizing: border-box;
+                margin-top: 20rpx;
+                position: relative;
+
+                .name {
+                    font-size: 30rpx;
+                    padding: 0 20rpx;
+                }
+
+                .img_contant {
+                    padding: 0 10rpx;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    image {
+                        min-width: 33.33%;
+                        height: 1rpx;
+                        max-width: 100%;
+                        margin: 0 10rpx 10rpx;
+                    }
+                }
+            }
+        }
+    }
+
+    // 
+    .fuRealInfo {
+        margin:0 20rpx 20rpx;
+        border-bottom: 1px solid rgb(243, 243, 243);
+        .name_time {
+            display: flex;
+            align-items: center;
+            margin:  0 0 16rpx;
+            .val {
+                color: #868686;
+                font-size: 24rpx;
+                flex: 1;
+            }
+
+            .time {
+                color: #999;
+                font-size: 24rpx;
+            }
+            .peoss {
+                border-radius: 50%;
+                width: 74rpx;
+                height: 74rpx;
+            }
+
+            .name {
+                font-weight: 500;
+                color: #559EFF;
+                font-size: 32rpx;
+                margin: 0 22rpx 0 15rpx;
+            }
+
+            .type {
+                font-size: 28rpx;
+                color: #686868;
+                margin-right: 20rpx;
+
+
+            }
+        }
+
+        .callback{
+            font-size:32rpx;
+            color: #202020;
+            padding-bottom: 20rpx;
+        }
+
+        .detail {
+
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 0.5);
+            border-radius: 8rpx;
+            padding: 22rpx 14rpx 20rpx 22rpx;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            margin-bottom: 20rpx;
+
+            .img {
+                height: 140rpx;
+                width: 190rpx;
+                margin-left: 20rpx;
+            }
+
+            .contant {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 140rpx;
+
+                .name {
+                    color: #282828;
+                    font-size: 32rpx;
+
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; //超出多少行
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    word-break: break-all;
+
+                    image {
+                        width: 34rpx;
+                        height: 1rpx;
+                        margin-right: 6rpx;
+                    }
+
+                    .n_i {
+                        margin-top: 0;
+                        margin-left: 6rpx;
+                        margin-right: 0;
+                        width: 56rpx;
+                    }
+                }
+
+                .see_time {
+                    display: flex;
+                    color: #9C9C9C;
+                    font-size: 28rpx;
+
+                    .time {
+                        flex: 1;
+                    }
+
+                    .see {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 15rpx;
+
+                        image {
+                            width: 24rpx;
+                            height: 1rpx;
+                            margin-right: 4rpx;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

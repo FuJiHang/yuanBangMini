@@ -1,0 +1,32 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-22 14:49:31
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-22 14:53:14
+ * @Description: 邀请我的家庭成员
+ */ -->
+<view id="fuInvitFam">
+    <!--  -->
+    <view class="help">
+        <image src="/image/invit_t.png" mode="widthFix" />
+    </view>
+    <view class="chooseType">
+        <view class="name">被邀请人身份</view>
+        <view class="contant">
+            <span class="child" wx:for="{{chooseList}}" wx:key="index">
+                <radio class="radio" value="r1" color="#559EFF" checked="true" />
+                {{item}}
+            </span>
+        </view>
+    </view>
+    <!--  -->
+    <view class="post" wx:for="{{postList}}" wx:key="index">
+        <span class="name">{{item.name}}</span>
+        <span class="input">
+            <input placeholder="{{item.plr}}" value="{{item.val}}" bindinput="inputFN" data-name="{{'postList['+index+'].val'}}" />
+        </span>
+    </view>
+    <view class="payNow">
+        <van-button>发起邀请</van-button>
+    </view>
+</view>

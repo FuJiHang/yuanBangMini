@@ -1,0 +1,14 @@
+@import "components/fujihang/fuTabbar/fuTabbar.wxss";
+page{
+  font-size: 24rpx;
+  background: #fff;
+  font-weight:400;
+}
+::-webkit-scrollbar{
+  width: 0 !important;
+  height: 0 !important;
+  color: transparent !important;
+}
+.mb{
+  background: red;
+}

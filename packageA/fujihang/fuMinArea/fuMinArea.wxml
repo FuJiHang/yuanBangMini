@@ -1,0 +1,32 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-18 17:40:29
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-18 17:42:10
+ * @Description: 选择小区
+ */ --> 
+<view id="fuMinArea">
+    <!--  -->
+    <view class="seach">
+        <input focus="{{focus}}" />
+        <view class="tip">
+            <image src="/image/sousuo.png" mode="widthFix" />
+            搜索小区
+        </view>
+    </view>
+    <!--  -->
+    <view class="contantBtn">
+        <scroll-view class="chooseFun" scroll-y="{{true}}">
+            <view class="child {{funActive==index?'funActive':''}}" wx:for="{{funList}}" wx:key="index" data-index="{{index}}" bindtap="funFN">
+                {{item}}
+            </view>
+        </scroll-view>
+        <scroll-view class="chooseContant" scroll-y="{{true}}">
+
+                <view class="child {{index==1?'packC':''}}" wx:for="{{20}}" wx:key="index">
+                    A{{index}}
+                </view>
+ 
+        </scroll-view>
+    </view>
+</view>

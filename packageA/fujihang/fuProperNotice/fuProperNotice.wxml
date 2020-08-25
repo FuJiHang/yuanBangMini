@@ -1,0 +1,26 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-22 15:53:47
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-22 16:01:04
+ * @Description: 物业通知
+ */ -->
+<view id="fuProperNotice">
+    <!--  -->
+    <view class="list">
+        <view class="nav">
+            <image src="/image/notice.png" mode="widthFix" />
+            6月份通知
+        </view>
+        <view class="contant">
+            <view class="child" wx:for='{{3}}' wx:key='index'>
+                <span class="name">元邦山清水秀小区停水通知</span>
+                <span class="time">06-24</span>
+            </view>
+        </view>
+        <view class="more">查看更多
+            <image src="/image/arrow.png" mode="widthFix" />
+
+        </view>
+    </view>
+</view>

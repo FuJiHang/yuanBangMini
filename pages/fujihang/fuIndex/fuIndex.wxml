@@ -1,0 +1,79 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-12 13:58:59
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-12 14:13:31
+ * @Description: file content
+ */ -->
+<view id="fuIndex">
+    <!-- 轮播图 -->
+    <view class="swiper">
+        <swiper style="height:{{imgheights[current]-25}}rpx;" indicator-dots="{{false}}" autoplay="{{true}}" circular="{{false}}" vertical="{{false}}" interval="{{4000}}" duration="{{500}}" bindchange="bindchangeImg">
+            <swiper-item wx:for="{{banner}}" wx:key="index" data-id='{{index}}'>
+                <image data-id='{{index}}' bindload="imageLoad" class='item-img' src="{{item.url}}" mode='widthFix'></image>
+            </swiper-item>
+        </swiper>
+        <view class="dot">
+            <span wx:for="{{banner}}" wx:key="index" class="child {{index==current?'hot':''}}"></span>
+        </view>
+    </view>
+    <!-- 缴费等功能 -->
+    <view class="funList">
+        <span bindtap="toFN" data-url="{{item.to}}" class="child" wx:for="{{funList}}" wx:key="index">
+            <image mode="widthFix" src="{{item.img}}" />
+            <view class="name">{{item.name}}</view>
+        </span>
+    </view>
+    <!-- 广播 -->
+    <view class="notice">
+        <span class="contant">
+            <span class="img">
+                <image src="/image/gonggao-2.png" mode="widthFix" />
+            </span>
+            <span class="flex">
+                <van-notice-bar color="#585858" backgroundColor="#F6F6F6" text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。" />
+            </span>
+        </span>
+    </view>
+    <!-- 小区物业处 -->
+    <view class="area">
+        <view class="navtop">
+            <span class="name">小区物业处</span>
+            <span class="val">值班表</span>
+        </view>
+        <view class="people">
+            <image src="/image/house_i.png" mode="aspectFill" />
+            <span class="name">张强</span>
+            <span class="type">物业经理</span>
+        </view>
+        <view class="phone" bindtap="openFN" data-name="show">
+            <image src="/image/phone_i.png" mode="widthFix" />
+            <span class="val">***-******</span>
+        </view>
+    </view>
+    <!-- 疫情防控专栏 -->
+    <view class="epidemic">
+        <view class="navtop">疫情防控专栏</view>
+        <view class="img">
+            <image mode="widthFix" src="/image/virus_i.png" />
+        </view>
+        <view class="contant">
+            <image mode="widthFix" src="{{item.img}}" wx:for="{{epidemic}}" wx:key="index" />
+        </view>
+    </view>
+    <!-- 实时资讯等 -->
+    <view class="news">
+        <van-tabs active="{{ newActive }}" line-height="4" line-width="30" swipeable="true" color="#559EFF" bind:change="newChange">
+            <van-tab wx:for="{{newList}}" wx:key="index" title="{{item.name}}">
+                <view class="contantNew">
+                    <fuRealInfo />
+                    <fuRealInfo />
+                </view>
+            </van-tab>
+        </van-tabs>
+    </view>
+    <!-- 弹窗 -->
+    <van-action-sheet show="{{ show }}" actions="{{ actions }}" bind:close="onClose" data-name="show" bind:select="onSelect" cancel-text="取消" />
+    <!-- 底部导航条 -->
+    <fuTabbar active="0"></fuTabbar>
+</view>

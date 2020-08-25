@@ -1,0 +1,1 @@
+#fuParkContract .payNow{padding:120rpx 52rpx 0;box-sizing:border-box;position:fixed;left:0;bottom:40rpx;width:100%;z-index:9}#fuParkContract .payNow .van-button{width:100%;height:86rpx;background:#559eff;border-radius:48rpx;color:#fff;font-size:36rpx;font-weight:500}

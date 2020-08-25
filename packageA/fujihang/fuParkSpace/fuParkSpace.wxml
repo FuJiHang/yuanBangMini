@@ -1,0 +1,60 @@
+<!-- /*
+ * @Author: fujihang
+ * @Date: 2020-06-15 09:45:22
+ * @LastEditors: your name
+ * @LastEditTime: 2020-06-15 09:46:15
+ * @Description: 停车位
+ */ -->
+<view id="fuParkSpace">
+    <!--  -->
+    <view class="seach">
+        <input focus="{{focus}}" />
+        <view class="tip">
+            <image src="/image/sousuo.png" mode="widthFix" />
+            搜索关键词查找
+        </view>
+    </view>
+    <!-- 轮播图 -->
+    <view class="swiper">
+        <swiper style="height:{{imgheights[current]-25}}rpx;" indicator-dots="{{false}}" autoplay="{{true}}" circular="{{false}}" vertical="{{false}}" interval="{{4000}}" duration="{{500}}" bindchange="bindchangeImg">
+            <swiper-item wx:for="{{banner}}" wx:key="index" data-id='{{index}}'>
+                <image data-id='{{index}}' bindload="imageLoad" class='item-img' src="{{item.url}}" mode='widthFix'></image>
+            </swiper-item>
+        </swiper>
+        <view class="dot">
+            <span wx:for="{{banner}}" wx:key="index" class="child {{index==current?'hot':''}}"></span>
+        </view>
+    </view>
+    <!--  -->
+    <view class="serve">
+        <view class="nav">物业服务</view>
+        <view class="contant">
+            <image class="left" src="/image/yycw_p.png" mode="widthFix" />
+            <span class="right">
+                <view class="img">
+                    <image src="/image/cwzz_p.png" mode="widthFix" />
+                </view>
+                <view class="img">
+                    <image src="/image/mcw_p.png" mode="widthFix" />
+                </view>
+            </span>
+        </view>
+        <view class="phone">
+            <image class="img" src="/image/serve_p.png" mode="widthFix" />
+            <span class="val">服务热线</span>
+            <span class="number">
+                <image src="/image/phone_i.png" mode="widthFix" />
+                ***-******
+            </span>
+        </view>
+    </view>
+    <!--  -->
+    <!-- 车位转卖 -->
+    <view class="news">
+        <van-tabs active="{{ newActive }}" line-height="4" line-width="30" swipeable="true" color="#559EFF" bind:change="newChange">
+            <van-tab wx:for="{{newList}}" wx:key="index" title="{{item.name}}">
+                <fuPackSpace />
+            </van-tab>
+        </van-tabs>
+    </view>
+</view>
